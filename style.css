@@ -25,10 +25,10 @@ p {
 	margin-bottom: 1.5em;
 }
 
-b,
+/* b,
 strong {
 	font-weight: bold;
-}
+} */
 
 dfn,
 cite,
@@ -138,6 +138,21 @@ body {
     padding: 0 2em;
     max-width: 700px !important;
 }
+
+#txt-con {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    background-color: #D2F4EA; border-radius: 10px;
+    margin: 20px auto;padding: 10px;
+}
+
+#left-dy {grid-column-start: 1;cursor: pointer;}
+#right-dy{grid-column-start: 12;}
+#left-dy, #right-dy{grid-row-start: 2;text-align: center;cursor: pointer;}
+#text-plate {grid-row: 1/ span 3;grid-column: 2/span 10;background-color: #79DFC1; border-radius: 10px;padding: 10px;}
+
 
 .test-wrapper {
     border: 10px solid #000;
